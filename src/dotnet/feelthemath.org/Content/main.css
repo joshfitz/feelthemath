@@ -38,6 +38,7 @@ body {
     background: white;
     max-height: 12vh;
     min-height: 6rem;
+    z-index: 1;
 }
 
 
@@ -69,14 +70,15 @@ body {
 }
 
 .share {
+    z-index: 2;
     width: 100%;
-    height: 12rem;
+    height: 15rem;
     bottom: 0;
     position: fixed;
     background: white;
     border-top: solid 2rem #1667B2;
     
-    max-height: 12vh;
+    max-height: 14vh;
     min-height: 6rem;
 }
 
@@ -95,8 +97,10 @@ body {
 
 section {
     padding-top:6rem;
-    padding-bottom:6rem;
+    padding-bottom:14rem;
     border-bottom: solid #eee 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .link {
@@ -130,4 +134,73 @@ section {
 
 .donate-button {
     text-decoration: none;
+}
+
+.math-box {
+    display: none;
+}
+.math-box:checked ~ .math-container{
+    top:0%;
+    
+}
+.math-box:checked  ~ .math-container .math-box-label{
+    top:3rem;
+}
+.math-box:checked  ~ .math-container .math-box-label .plus-icon{
+    transform: rotate(45deg) translate(0.4rem);
+}
+.math-box:checked  ~ .math-container .math-box-label .math-label-text{
+    opacity: 0;
+}
+
+.math-box-label {
+    font-size: 6.7rem;
+    background: #1667B2;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    top:-12rem;
+    right: 8rem;
+    line-height: 0.9rem;
+    position: absolute;
+    cursor: pointer;
+     transition: top 0.3s cubic-bezier(.4,0,.6,1);
+}
+
+.math-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    background: rgba(255, 255, 255, 0.92);
+    transition: top 0.3s cubic-bezier(.4,0,.6,1);
+    border-top: solid 2rem #EEEEEE;
+}
+
+.math-label-text {
+    color: #CCCCCC;
+    margin-left:-40.3rem;
+    margin-right: 1.2rem;
+    line-height: 6.5rem;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity .3s cubic-bezier(.4,0,.6,1);
+}
+
+
+
+.plus-icon {
+    line-height: 5.2rem;
+    vertical-align:top;
+    display: inline-block;
+    transition: transform .3s cubic-bezier(.4,0,.6,1);
+}
+
+.math-link {
+    fill:#1868B2;
+}
+.math-link:hover {
+    fill:#F15C5C;
 }
