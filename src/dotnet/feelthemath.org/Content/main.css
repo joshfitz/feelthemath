@@ -13,7 +13,7 @@ body {
     font-family: 'Anton', sans-serif;
     font-weight: 400;
 }
-.roboto{
+.roboto {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
 }
@@ -40,35 +40,31 @@ body {
     min-height: 6rem;
     z-index: 1;
 }
-
-
 .text-flow {
-    width: 95%;
+    width: 100%;
     font-size: 20rem;
     line-height: 80%;
     margin: 2rem;
+    margin-left: 0;
     text-align: center;
     display: block;
 }
-
 .blue-rule {
     width: 100%;
     height: 2rem;
     background: #1667B2;
     display: block;
 }
-
 .disclaimer {
     width: 88%;
     text-align: center;
     display: block;
     font-size: 15px;
- color: #666;
+    color: #666;
     margin-top: 6rem;
     margin-left: 5rem;
     margin-right: 4rem;
 }
-
 .share {
     z-index: 2;
     width: 100%;
@@ -77,37 +73,31 @@ body {
     position: fixed;
     background: white;
     border-top: solid 2rem #1667B2;
-    
     max-height: 14vh;
     min-height: 6rem;
 }
-
-
-.share-link circle{
-fill:#F15C5C;
-    transition:fill 0.2s cubic-bezier(.4,0,.6,1);
+.share-link circle {
+    fill: #F15C5C;
+    transition: fill 0.2s cubic-bezier(.4, 0, .6, 1);
 }
 .share-link:hover circle {
-    
-    transition:fill 0.2s cubic-bezier(.4,0,.6,1);
-    fill:#1667B2;
+    transition: fill 0.2s cubic-bezier(.4, 0, .6, 1);
+    fill: #1667B2;
 }
-
 .spacer {
     width: 100%;
     height: 18rem;
     border-bottom: solid 2rem rgba(0, 0, 0, 0);
     max-height: 12vh;
 }
-
 section {
-    padding-top:6rem;
-    padding-bottom:14rem;
+    padding-top: 6rem;
+    padding-bottom: 14rem;
     border-bottom: solid #eee 2rem;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
-
 .link {
     text-align: center;
     font-size: 2.5rem;
@@ -115,10 +105,9 @@ section {
     display: block;
 }
 .link:hover {
-    color:#F15C5C;
+    color: #F15C5C;
     text-decoration: underline;
 }
-
 .cta {
     color: white;
     background: #F15C5C;
@@ -132,33 +121,29 @@ section {
     cursor: pointer;
     margin-top: 10rem;
     margin-bottom: -4rem;
-    transition: background 0.2s cubic-bezier(.4,0,.6,1);
+    transition: background 0.2s cubic-bezier(.4, 0, .6, 1);
 }
 .cta:hover {
     background: #1667B2;
 }
-
 .donate-button {
     text-decoration: none;
 }
-
 .math-box {
     display: none;
 }
-.math-box:checked ~ .math-container{
-    top:0%;
-    
+.math-box:checked ~ .math-container {
+    top: 0%;
 }
-.math-box:checked  ~ .math-container .math-box-label{
-    top:3rem;
+.math-box:checked ~ .math-container .math-box-label {
+    top: 3rem;
 }
-.math-box:checked  ~ .math-container .math-box-label .plus-icon{
+.math-box:checked ~ .math-container .math-box-label .plus-icon {
     transform: rotate(45deg) translate(0.4rem);
 }
-.math-box:checked  ~ .math-container .math-box-label .math-label-text{
+.math-box:checked ~ .math-container .math-box-label .math-label-text {
     opacity: 0;
 }
-
 .math-box-label {
     font-size: 6.7rem;
     background: #F15C5C;
@@ -167,53 +152,58 @@ section {
     border-radius: 50%;
     color: white;
     text-align: center;
-    top:-12rem;
+    top: -12rem;
     right: 8rem;
     line-height: 0.9rem;
     position: absolute;
     cursor: pointer;
-     transition: top 0.3s cubic-bezier(.4,0,.6,1), background 0.2s cubic-bezier(.4,0,.6,1);
+    transition: top 0.3s cubic-bezier(.4, 0, .6, 1), background 0.2s cubic-bezier(.4, 0, .6, 1);
 }
 .math-box-label:hover {
     background: #1667B2;
 }
-.math-box-label:hover .math-label-text{
+.math-box-label:hover .math-label-text {
     color: #1667B2;
 }
-
 .math-container {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 100%;
     background: rgba(255, 255, 255, 0.92);
-    transition: top 0.3s cubic-bezier(.4,0,.6,1);
+    transition: top 0.3s cubic-bezier(.4, 0, .6, 1);
     border-top: solid 2rem #EEEEEE;
 }
-
 .math-label-text {
     color: #CCCCCC;
-    margin-left:-40.3rem;
+    margin-left: -40.3rem;
     margin-right: 1.2rem;
     line-height: 6.5rem;
     display: inline-block;
     opacity: 1;
-    transition: opacity .3s cubic-bezier(.4,0,.6,1), color .3s cubic-bezier(.4,0,.6,1);
+    transition: opacity .3s cubic-bezier(.4, 0, .6, 1), color .3s cubic-bezier(.4, 0, .6, 1);
 }
-
-
-
 .plus-icon {
     line-height: 5.2rem;
-    vertical-align:top;
+    vertical-align: top;
     display: inline-block;
-    transition: transform .3s cubic-bezier(.4,0,.6,1);
+    transition: transform .3s cubic-bezier(.4, 0, .6, 1);
 }
-
 .math-link {
-    fill:#1868B2;
+    fill: #1868B2;
 }
 .math-link:hover {
-    fill:#F15C5C;
+    fill: #F15C5C;
 }
-
+@media not screen and (max-width:1000px) { 
+    html{
+        font-size: 7px;
+    }
+    .disclaimer{
+        width:600px;
+       margin: auto;
+    }
+    .cta{
+        margin-bottom: 2rem;
+    }
+}
