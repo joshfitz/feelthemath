@@ -83,8 +83,13 @@ body {
 }
 
 
-
+.share-link circle{
+fill:#F15C5C;
+    transition:fill 0.2s cubic-bezier(.4,0,.6,1);
+}
 .share-link:hover circle {
+    
+    transition:fill 0.2s cubic-bezier(.4,0,.6,1);
     fill:#1667B2;
 }
 
@@ -127,6 +132,7 @@ section {
     cursor: pointer;
     margin-top: 10rem;
     margin-bottom: -4rem;
+    transition: background 0.2s cubic-bezier(.4,0,.6,1);
 }
 .cta:hover {
     background: #1667B2;
@@ -155,7 +161,7 @@ section {
 
 .math-box-label {
     font-size: 6.7rem;
-    background: #1667B2;
+    background: #F15C5C;
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
@@ -166,7 +172,13 @@ section {
     line-height: 0.9rem;
     position: absolute;
     cursor: pointer;
-     transition: top 0.3s cubic-bezier(.4,0,.6,1);
+     transition: top 0.3s cubic-bezier(.4,0,.6,1), background 0.2s cubic-bezier(.4,0,.6,1);
+}
+.math-box-label:hover {
+    background: #1667B2;
+}
+.math-box-label:hover .math-label-text{
+    color: #1667B2;
 }
 
 .math-container {
@@ -186,7 +198,7 @@ section {
     line-height: 6.5rem;
     display: inline-block;
     opacity: 1;
-    transition: opacity .3s cubic-bezier(.4,0,.6,1);
+    transition: opacity .3s cubic-bezier(.4,0,.6,1), color .3s cubic-bezier(.4,0,.6,1);
 }
 
 
