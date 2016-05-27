@@ -3,26 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "feelthemath.org", "C:\git\feelthemath\src\dotnet\feelthemath.org\", "{413B650B-6302-4703-BD92-526B51DDE0D5}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "feelthemath.org", "feelthemath.org\", "{A192BECF-4C8D-4973-ABA5-E8A29C7BF269}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_64844"
-		Debug.AspNetCompiler.PhysicalPath = "C:\git\feelthemath\src\dotnet\feelthemath.org\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64844\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_43654"
+		Debug.AspNetCompiler.PhysicalPath = "feelthemath.org\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43654\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_64844"
-		Release.AspNetCompiler.PhysicalPath = "C:\git\feelthemath\src\dotnet\feelthemath.org\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64844\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_43654"
+		Release.AspNetCompiler.PhysicalPath = "feelthemath.org\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_43654\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "64844"
-		SlnRelativePath = "C:\git\feelthemath\src\dotnet\feelthemath.org\"
-		DefaultWebSiteLanguage = "Visual C#"
+		VWDPort = "43654"
+		SlnRelativePath = "feelthemath.org\"
 	EndProjectSection
 EndProject
 Global
@@ -30,8 +29,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{413B650B-6302-4703-BD92-526B51DDE0D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{413B650B-6302-4703-BD92-526B51DDE0D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A192BECF-4C8D-4973-ABA5-E8A29C7BF269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A192BECF-4C8D-4973-ABA5-E8A29C7BF269}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
